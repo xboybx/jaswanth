@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/mediaquries.css">
+</head>
+
+<body>
+    <nav id="desktop-nav">
+        <div class="logo">Jaswanth</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo">Jaswanth</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+            </div>
+        </div>
+    </nav>
+    <!-- ----------------------------------Hero--------------------------------------------------------------------- -->
+    <section id="profile">
+        <div class="section__pic-container">
+            <img src="Images/jaswanthh.jpg" alt="profile picture" />
+        </div>
+        <div class="section__text">
+            <p class="section__text__p1">Hello, I'm</p>
+            <h1 class="title">Jaswanth</h1>
+            <p class="section__text__p2">Frontend Developer</p>
+            <div class="btn-container">
+                <button class="btn btn-color-2" onclick="window.open('./assets/resume-example.pdf')">
+                    Resume
+                </button>
+                <button class="btn btn-color-1" onclick="location.href='./#contact'">
+                    Contact
+                </button>
+            </div>
+            <div id="socials-container">
+                <a href="https://www.linkedin.com/in/xboy/" target="main"><i
+                        class="ri-linkedin-box-fill   icon"></i></a>
+                <a href="https://github.com/xboybx" target="main"><i class="ri-github-fill  icon"></i></a>
+            </div>
+        </div>
+    </section>
+    <!-- ---------------------------------About------------------------------------------------------- -->
+    <section id="about">
+        <p class="section__text__p1">Get To Know More</p>
+        <h1 class="title">About Me</h1>
+        <div class="section-container">
+            <div class="section__pic-container1">
+                <img src="Images/x.jpg" alt="Profile picture" class="about-pic" />
+            </div>
+            <div class="about-details-container">
+                <div class="about-containers">
+                    <div class="details-container">
+                        <i class="ri-medal-2-fill  icon1"></i>
+                        <h3>Experience</h3>
+                        <p>1+ years <br />Frontend Development</p>
+                    </div>
+                    <div class="details-container">
+                        <i class="fa-solid fa-user-graduate  icon1" style="color: #000000;"></i>
+                        <h3>Education</h3>
+                        <p>Diploma in Mech Engg.<br />Bachelor of Technology(IT)</p>
+                    </div>
+                </div>
+                <div class="text-container">
+                    <p>
+                        I'm Jaswanth 20 Years Old, And A Passionate Beatboxer And Music Producer Who Is Currently Diving
+                        Into The World Of Frontend Development. My Journey Is Driven By A Deep Curiosity To Explore The
+                        World And Learn. Join Me As I Blend The Rhythms Of Technology With The Melodies Of Creativity On
+                        This Exciting Path Of Self-Discovery And Innovation.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <!-- ------------------------Experience--------------------------------------------- -->
+        <i class="ri-arrow-down-double-line icon arrow" onclick="location.href='./#experience'"></i>
+    </section>
+    <section id="experience">
+        <p class="section__text__p1">My</p>
+        <h1 class="title">Skills</h1>
+        <div class="experience-details-container">
+            <div class="about-containers">
+                <div class="details-container">
+                    <h2 class="experience-sub-title">Frontend Development</h2>
+                    <div class="article-container">
+                        <article>
+                            <i class="ri-checkbox-circle-fill icon1"></i>
+
+                            <div>
+                                <h3>HTML <span><i class="ri-html5-fill"></i></span></h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <i class="ri-checkbox-circle-fill icon1"></i>
+                            <div>
+                                <h3>CSS <span><i class="ri-css3-fill"></i></span></h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <i class="ri-checkbox-circle-fill icon1"></i>
+                            <div>
+                                <h3>Tailwind <span><iconify-icon icon="mdi:tailwind"></iconify-icon></span></h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <i class="ri-checkbox-circle-fill icon1"></i>
+                            <div>
+                                <h3>JavaScript<span><i class="fa-brands fa-square-js"
+                                            style=" padding-left: 3px;"></i></span></h3>
+                                <p>Basic</p>
+                            </div>
+                        </article>
+                        <article>
+                            <i class="ri-checkbox-circle-fill icon1"></i>
+                            <div>
+                                <h3>MongoDb <span><iconify-icon icon="bxl:mongodb"
+                                            style="font-size: 26px; "></iconify-icon></span></h3>
+                                <p>Basic</p>
+                            </div>
+                        </article>
+                        <article>
+                            <i class="ri-checkbox-circle-fill icon1"></i>
+                            <div>
+                                <h3>Figma <span><iconify-icon icon="simple-icons:figma"></iconify-icon></span></h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+                <div class="details-container">
+                    <h2 class="experience-sub-title">Frontend Development</h2>
+                    <div class="article-container">
+                        <article>
+                            <i class="ri-checkbox-circle-fill icon1"></i>
+                            <div>
+                                <h3>PostgressSQL<span><iconify-icon icon="mdi:sql-query"
+                                            style="padding-left: 2px; font-size: 25px;"></iconify-icon></span>
+                                </h3>
+                                <p>Basic</p>
+                            </div>
+                        </article>
+                        <article>
+                            <i class="ri-checkbox-circle-fill icon1"></i>
+                            <div>
+                                <h3>Node JS <span><i class="fa-brands fa-node-js"></i></span>
+                                </h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <i class="ri-checkbox-circle-fill icon1"></i>
+                            <div>
+                                <h3>Express JS <span><iconify-icon
+                                            icon="skill-icons:expressjs-dark"></iconify-icon></span></h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <i class="ri-checkbox-circle-fill icon1"></i>
+                            <div>
+                                <h3>Git <span><i class="ri-git-branch-fill" ></i></span></h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- -----------------------Projects------------------------------------------------------ -->
+        <i class="ri-arrow-down-double-line icon arrow" onclick="location.href='./#projects'"></i>
+    </section>
+    <section id="projects">
+        <p class="section__text__p1">Peek my Recent</p>
+        <h1 class="title">Projects</h1>
+        <div class="experience-details-container">
+            <div class="about-containers">
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img src="https://static.vecteezy.com/system/resources/previews/000/356/165/original/vector-checklist-icon.jpg"
+                            alt="Project 1" class="project-img" />
+                    </div>
+                    <h2 class="experience-sub-title project-title">Project One</h2>
+                    <h5>To-Do App</h5>
+                    <div class="btn-container">
+                        <button class="btn btn-color-2 project-btn"
+                            onclick="location.href='https://github.com/xboybx/To-Do'">
+                            Github
+                        </button>
+                        <button class="btn btn-color-2 project-btn"
+                            onclick="location.href='https://xboybx.github.io/To-Do/'">
+                            Live Demo
+                        </button>
+                    </div>
+                </div>
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img src="https://cdn.dribbble.com/userupload/5943892/file/original-1e8b3ee4eaed104abc2e372587a7cc17.png?compress=1&resize=1200x900&vertical=top"
+                            alt="Project 2" class="project-img" />
+                    </div>
+                    <h2 class="experience-sub-title project-title">Project Two</h2>
+                    <h5>Stories Feature</h5>
+                    <div class="btn-container">
+                        <button class="btn btn-color-2 project-btn"
+                            onclick="location.href='https://github.com/xboybx/Stories_clones'">
+                            Github
+                        </button>
+                        <button class="btn btn-color-2 project-btn"
+                            onclick="location.href='https://xboybx.github.io/Stories_clones/'">
+                            Live Demo
+                        </button>
+                    </div>
+                </div>
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img src="https://1.bp.blogspot.com/-oNFb2aLs48M/XvMH7S_NtYI/AAAAAAAAADk/yztz2cwPaswl30JIqSV0qsamAnxemCuhgCNcBGAsYHQ/s1600/instant-bank-account-opening.png"
+                            alt="Project 3" class="project-img" />
+                    </div>
+                    <h2 class="experience-sub-title project-title">Project Three</h2>
+                    <h5>Minimal Bank</h5>
+                    <div class="btn-container">
+                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/xboybx/MinimalBank'">
+                            Github
+                        </button>
+                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://xboybx.github.io>
+                            Live Demo
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- -----------------------Contact------------------------------------------------------ -->
+        <i class="ri-arrow-down-double-line icon arrow" onclick="location.href='./#contact'"></i>
+    </section>
+    <section id="contact">
+        <p class="section__text__p1">Reach me at</p>
+        <h1 class="title">Contact Me</h1>
+        <div class="contact-info-upper-container">
+            <div class="contact-info-container">
+                <i class="ri-mail-send-fill  contact-icon "></i>
+                <p><a href="mailto:jeswanth012@gmail.com">jeswanth012@gmail.com</a></p>
+            </div>
+            <div class="contact-info-container">
+                <i class="ri-linkedin-box-line contact-icon"></i>
+                <p><a href="https://www.linkedin.com/in/xboy/" target="main">LinkedIn</a></p>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <nav>
+            <div class="nav-links-container">
+                <ul class="nav-links">
+                    <li><a href="#profile">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        <p>&#169;Jaswanth's PortFolio</p>
+    </footer>
+    <script src="script.js"></script>
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+</body>
+
+</html>
